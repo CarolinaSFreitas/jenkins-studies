@@ -27,4 +27,5 @@
 1. Executar o ``docker-compose up`` 
 2. Acessar o localhost:8080
 3. Confs inicias
-4. 
+4. Instalações recomendadas pelo Jenkins
+
