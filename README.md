@@ -24,6 +24,8 @@
 
 ## Jenkins - YouTube
 
+[Vídeo - O mínimo que você precisa saber](https://www.youtube.com/watch?v=8OfhS5f7jIY)
+
 1. Executar o ``docker-compose up`` 
 2. Acessar o localhost:8080
 3. Confs inicias
