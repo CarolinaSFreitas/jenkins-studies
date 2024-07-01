@@ -22,3 +22,9 @@
 
 [Hello World - Doc.](https://www.jenkins.io/doc/pipeline/tour/hello-world/)
 
+## Jenkins - YouTube
+
+1. Executar o ``docker-compose up`` 
+2. Acessar o localhost:8080
+3. Confs inicias
+4. 
