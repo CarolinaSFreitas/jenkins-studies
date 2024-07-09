@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Pull from Git') {
             steps {
-                git 'https://github.com/CarolinaSFreitas/jenkins-studies.git'
+                git branch: 'main', url: 'https://github.com/CarolinaSFreitas/jenkins-studies.git'
             }
         }
         stage('Build in Docker') {
