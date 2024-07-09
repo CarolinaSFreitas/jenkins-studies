@@ -10,7 +10,20 @@
 
 [Hello World - Doc.](https://www.jenkins.io/doc/pipeline/tour/hello-world/)
 
-
+````
+Jenkinsfile (Declarative Pipeline)
+/* Requires the Docker Pipeline plugin */
+pipeline {
+    agent { docker { image 'golang:1.22.5-alpine3.20' } }
+    stages {
+        stage('build') {
+            steps {
+                sh 'go version'
+            }
+        }
+    }
+}
+````
 
 ## Configurando Nginx como Proxy Reverso 
 
