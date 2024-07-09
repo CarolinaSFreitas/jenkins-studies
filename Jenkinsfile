@@ -1,9 +1,16 @@
-Jenkinsfile (Declarative Pipeline)
-/* Requires the Docker Pipeline plugin */
 pipeline {
-    agent { docker { image 'golang:1.22.5-alpine3.20' } }
+    agent any
+
     stages {
-        stage('build') {
+        stage('Pull from Git') {
+            steps {
+                git 'https://github.com/CarolinaSFreitas/jenkins-studies.git'
+            }
+        }
+        stage('Build in Docker') {
+            agent {
+                docker { image 'golang:1.22.5-alpine3.20' }
+            }
             steps {
                 sh 'go version'
             }
